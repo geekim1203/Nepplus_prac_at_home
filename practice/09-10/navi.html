@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      li {
+        float: left;
+
+        padding: 10px;
+        text-align: center;
+        margin: 20px;
+      }
+      #navi a[href] {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 20px;
+      }
+      #navi a:link,
+      #navi a:visited {
+        color: #000;
+      }
+      #navi a:hover {
+        background-color: blue;
+        color: white;
+      }
+      #navi a:active {
+        background-color: pink;
+        color: #fff;
+      }
+      .clear {
+          clear: both;
+      }
+      .contents {
+          width: 600px;
+          height: 300px;
+          border: 1px solid;
+          padding: 10px;
+          margin: 20px auto;
+          border-radius: 10px;
+      }
+      #intro:target {
+          background-color: blue;
+          color: white;
+      }
+      #room:target {
+          background-color: red;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navi">
+      <ul>
+        <li><a href="#intro">이용 안내</a></li>
+        <li><a href="#room">객실 소개</a></li>
+        <li><a href="#reservation">예약 방법 및 요금</a></li>
+        <li><a href="./">예약하기</a></li>
+      </ul>
+    </nav>
+    <div class="clear">
+    <div id="intro" class="contents">
+      <h2>객실소개</h2>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+    <div id="room" class="contents">
+      <h2>객실소개</h2>
+      <p>
+        The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content
+        here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model
+        text, and a search for 'lorem ipsum' will uncover many web sites still
+        in their infancy. Various versions have evolved over the years,
+        sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+      </p>
+    </div>
+    <div id="reservation" class="contents">
+      <h2>객실소개</h2>
+      <p>
+        The point of using Lorem Ipsum is that it has a more-or-less normal
+        distribution of letters, as opposed to using 'Content here, content
+        here', making it look like readable English. Many desktop publishing
+        packages and web page editors now use Lorem Ipsum as their default model
+        text, and a search for 'lorem ipsum' will uncover many web sites still
+        in their infancy. Various versions have evolved over the years,
+        sometimes by accident, sometimes on purpose (injected humour and the
+        like).
+      </p>
+    </div>
+  </body>
+</html>

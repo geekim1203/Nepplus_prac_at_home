@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n = prompt("숫자를 입력해주세요.");
+      let msg = "";
+
+      if (n !== null) {
+        var nFact = 1; // 무엇을 선언한 것?
+        var i = 1; // 무엇을 선언한 것?
+
+        while (i <= 5) {
+          //i가 1이면 5보다 작거나 같으니까 nFact x 1을 한다? 하고 밑으로 갔을때 i++이니까 다시 while위로 올라와서 2<=5가 되고 이전 nFact가 1이었으니까 여기에 2를 곱한다?
+          nFact *= i; //이렇게 반복하게 되면 1x1 1x2 2x3 6x4 24x5 해서 nFact 값은 120?
+          i++;
+        }
+        msg = n + "! =" + nFact; //위에 "" 값이었던 msg = 5!= 125;
+      } else msg = "값을 입력하지 않았습니다.";
+      document.write(msg);
+    </script>
+  </body>
+</html>

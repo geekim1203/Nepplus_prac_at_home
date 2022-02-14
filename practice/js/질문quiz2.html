@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>3의 배수 찾기</h1>
+    <script>
+      var num = prompt("몇 까지 3의 배수를 찾을까요?");
+      let count = 0;
+      let i = 1;
+
+      if (num !== null) {
+        // num null(취소)가 아니면 밑에 실행
+        while (i <= num) {
+          // i가 num(ex 18)보다 작거나 같을때 까지
+          if (i % 3 === 0) {
+            // i를 3으로 나누었을때 나머지가 0이라면 출력해라
+            document.write(i);
+            count += 1; // 그 후 count 0 + 1을 해라
+          }
+          i++; //위 식을 돌고 i++ 해서 while문을 실행해라
+        }
+
+        // for (let i = 1; i <= num; i++) {
+        //   if (i % 3 === 0) {
+        //     document.write(i);
+        //     count += 1;
+        //   }
+        // }
+
+        document.write("<br>" + count);
+      }
+    </script>
+  </body>
+</html>
